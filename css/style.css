@@ -1,0 +1,59 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: silver;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  /*flex: 1 400px;*/
+  flex: 400px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  background: antiquewhite;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 175px;
+}
+
+button:first-child {
+  align-self: center;
+}
+button:last-child {
+  order: 1;/* default value 0, the higher the number the later desplayed*/
+}
+nav {
+  box-sizing: border-box;
+  height: 50px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
