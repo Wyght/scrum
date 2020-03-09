@@ -43,9 +43,12 @@ button {
 button:first-child {
   align-self: center;
 }
+
 button:last-child {
-  order: 1;/* default value 0, the higher the number the later desplayed*/
+  order: 1;
+  /* default value 0, the higher the number the later desplayed*/
 }
+
 nav {
   box-sizing: border-box;
   height: 50px;
@@ -57,3 +60,56 @@ nav {
   align-items: center;
   margin: 0 auto;
 }
+
+section:nth-of-type(2)>article {
+  flex: 0 1 350;
+}
+
+section:nth-of-type(2)>article:nth-of-type(3) {
+  flex: 0 1 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section:nth-of-type(2)>article:nth-of-type(3)>nav {
+  width: 95%;
+}
+
+section:nth-of-type(2)>article:nth-of-type(3)>nav>button {
+  flex: 0 1 130px;
+}
+
+section:nth-of-type(2)>article:nth-of-type(3)>article {
+  width: 45%;
+}
+
+/*
+.myNest{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.myNest>article{
+  flex: 250px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+}
+.myNest>article:nth-of-type(3)>nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.myNest>article:nth-of-type(3)>nav>button{
+  width: 90px;
+  flex: 250px;
+  box-sizing: border-box;
+
+  justify-content: space-between;
+
+}
+*/

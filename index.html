@@ -16,19 +16,19 @@
 <title>Flex Box</title>
 
 <body>
- <nav>
-   <button>Inventa I</button>
-   <button>Inventa II</button>
-   <button>Inventa III</button>
-   <button>Inventa IV</button>
-   <button>Inventa V</button>
-   <button>Inventa VII</button>
-   <button>Inventa VIII</button>
- </nav>
+  <nav>
+    <button>Inventa I</button>
+    <button>Inventa II</button>
+    <button>Inventa III</button>
+    <button>Inventa IV</button>
+    <button>Inventa V</button>
+    <button>Inventa VII</button>
+    <button>Inventa VIII</button>
+  </nav>
 
 
   <header>
-    <h1>Sample flexbox example</h1>
+    <h1>Sample flexbox</h1>
   </header>
 
   <section>
@@ -175,6 +175,70 @@
     </article>
 
   </section>
+
+
+  <header>
+    <h1>Sample nested flexbox example</h1>
+  </header>
+
+  <section>
+    <!--Begin flexbox that contains nested flexbox-->
+    <article>
+      <p>Ut ex mi, sodales et mi at, auctor elementum orci. Suspendisse quis
+        arcu pellentesque lorem blandit sodales eget et urna. Sed eu elementum
+        orci. Vestibulum eleifend neque eget bibendum commodo. Ut mattis, arcu
+        eu fermentum placerat, mi arcu elementum sem, id tempus nulla arcu.
+      </p>
+    </article>
+    <!--END: first article not nested-->
+    <article>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+        euismod aliquam ullamcorper. Nunc a interdum lacus, sed sollicitudin
+        ipsum. Suspendisse eros lorem, semper a ullamcorper at, bibendum a
+        metus. Proin maximus ante eget metus vulputate, sagittis bibendum nisl
+        scelerisque. Aliquam pretium viverra risus, vel ultrices massa commodo
+        at. Nullam vitae mattis lorem. Phasellus vel nibh sed eros sodales
+        venenatis. Suspendisse a imperdiet.
+      </p>
+    </article>
+    <!--END: second article not nested-->
+    <article>
+      <!-- article that contains nested flexbox-->
+      <nav>
+        <!--nested flexbox 1st-->
+        <button>Terra I</button>
+        <button>Terra II</button>
+        <button>Terra III</button>
+        <button>Terra IV</button>
+        <button>Terra V</button>
+        <button>Terra VI</button>
+      </nav>
+      <!--END navNest-->
+      <article>
+        <!--nested flexbox 2nd-->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          eleifend congue nisl, non lacinia sem. Mauris vitae justo orci.
+          Suspendisse ultrices congue ultrices. Aliquam erat volutpat. Vivamus
+          semper diam nisi, vel vehicula quam cursus et.
+        </p>
+      </article>
+      <!--END myNest article 1st-->
+      <article>
+        <!--nested flexbox 3rd-->
+        <p>
+          In sit amet suscipit ipsum, ut luctus mauris. Aenean varius quam vitae
+          orci efficitur auctor. Nam varius massa ligula, ac lacinia metus
+          placerat sed. Cras tristique tellus sit amet ex euismod finibus.
+          Phasellus dignissim eu.
+        </p>
+      </article>
+      <!--END myNest article 2nd-->
+      <!-- vvvvv article that contains nested flexbox vvvv -->
+    </article>
+    <!--END: nested article class - myNest-->
+  </section>
+  <!--Begin flexbox that contains nested flexbox-->
 
 </body>
 
