@@ -6,18 +6,6 @@ body {
   margin: 0;
 }
 
-header {
-  background: silver;
-  height: 100px;
-}
-
-h1 {
-  text-align: center;
-  color: white;
-  line-height: 100px;
-  margin: 0;
-}
-
 article {
   /*flex: 1 400px;*/
   flex: 400px;
@@ -27,26 +15,22 @@ article {
   background: antiquewhite;
 }
 
-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 button {
   font-size: 18px;
   line-height: 1.5;
   width: 175px;
 }
 
-button:first-child {
-  align-self: center;
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
 }
 
-button:last-child {
-  order: 1;
-  /* default value 0, the higher the number the later desplayed*/
+header {
+  background: silver;
+  height: 100px;
 }
 
 nav {
@@ -59,6 +43,22 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button:first-child {
+  align-self: center;
+}
+
+button:last-child {
+  order: 1;
+  /* default value 0, the higher the number the later desplayed*/
 }
 
 section:nth-of-type(2)>article {
@@ -90,6 +90,11 @@ section>div {
   padding: 10px;
   background-color: rgb(207, 232, 220);
   border: 2px solid rgb(79, 185, 227);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
 }
 
 /*
