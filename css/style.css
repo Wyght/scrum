@@ -85,6 +85,13 @@ section:nth-of-type(2)>article:nth-of-type(3)>article {
   width: 45%;
 }
 
+section>div {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(207, 232, 220);
+  border: 2px solid rgb(79, 185, 227);
+}
+
 /*
 .myNest{
     display: flex;
